@@ -1,40 +1,36 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require("path");
+const hwp = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist/'),
-    filename: 'main.js',
-    assetModuleFilename: '[name][ext]'
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
+
+  devtool: "eval-source-map",
   devServer: {
-    open: true,
-    compress: true,
-    hot: true,
-    historyApiFallback: true,
+    watchFiles: ["./src/template.html"],
   },
+
+  plugins: [
+    new hwp({
+      template: "./src/template.html",
+    }),
+  ],
+
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource'
-      }
+        type: "asset/resource",
+      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Restaurant',
-      filename: 'index.html',
-      template: '/src/template.html'
-    })
-  ]
-}
+};
