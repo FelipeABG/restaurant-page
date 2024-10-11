@@ -1,2 +1,4 @@
 import "./style.css";
-import homePage from "./home.js";
+import HomePage from "./home.js";
+
+HomePage.render();
