@@ -29,11 +29,33 @@ export default class {
   static #generateRightSide() {
     const main = this.#create("div", "right-main");
 
+    const bottom = this.#create("div", "right-main-bottom");
+    bottom.appendChild(this.#createImage(drinkImg, "drink-img"));
+
     const top = this.#create("div", "right-main-top");
-    top.appendChild(this.#createImage(foodImg, "food-img"));
+    const topImage = this.#create("div", "top-image");
+    topImage.appendChild(this.#createImage(foodImg, "food-img"));
+    top.appendChild(topImage);
+
+    const text = this.#create("div", "top-text");
+
+    const title = this.#create("h3", "top-title");
+    title.innerText = "Fancy feast Restaurant";
+
+    const textContent = this.#create("p", "top-text-content");
+    textContent.innerText = "Exquisite dishes and impeccable service";
+
+    const button = this.#create("button", "top-button");
+    button.innerHTML = "SEE MENU";
+
+    text.appendChild(title);
+    text.appendChild(textContent);
+    text.appendChild(button);
+
+    top.appendChild(text);
 
     main.appendChild(top);
-    main.appendChild(this.#createImage(drinkImg, "drink-img"));
+    main.appendChild(bottom);
 
     return main;
   }
@@ -49,6 +71,7 @@ export default class {
   static #createImage(image, className) {
     const img = document.createElement("img");
     img.classList.add(className);
+    img.src = image;
     return img;
   }
 }
