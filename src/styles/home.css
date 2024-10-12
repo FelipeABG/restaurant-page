@@ -4,6 +4,8 @@
 }
 
 :root {
+  --white: #f9f9f9;
+  --black: #171717;
   text-decoration: none;
   font-family: "Graftyne";
 }
@@ -12,10 +14,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+  color: var(--black);
+  background-color: var(--white);
 }
 
 header {
-  background-color: white;
+  background-color: var(--white);
   padding: 0px 5vw;
   box-sizing: border-box;
   display: flex;
@@ -47,7 +51,8 @@ nav {
 }
 
 header button {
-  background-color: white;
+  color: var(--black);
+  background-color: var(--white);
   border: none;
   font-family: "Graftyne";
   font-size: 1.3rem;
@@ -116,7 +121,7 @@ header button:hover {
 }
 
 .top-button {
-  color: white;
+  color: var(--white);
   width: 11vw;
   height: 7vh;
   background-color: #da9858;
@@ -144,7 +149,7 @@ header button:hover {
   width: 100%;
   display: block;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .place {
