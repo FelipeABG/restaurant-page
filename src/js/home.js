@@ -26,6 +26,17 @@ export default class {
 
     const topRight = this.#create("div", "top-right");
 
+    const title = this.#create("h2", "top-tittle");
+    title.innerText = "Fancy Feast Restaurant";
+    const text = this.#create("p", "top-text");
+    text.innerText = "Exquisite dishes and impeccable service";
+    const button = this.#create("button", "top-button");
+    button.innerHTML = "SEE MENU";
+
+    topRight.appendChild(title);
+    topRight.appendChild(text);
+    topRight.appendChild(button);
+
     top.appendChild(topLeft);
     top.appendChild(topRight);
 

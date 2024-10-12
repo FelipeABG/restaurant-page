@@ -15,7 +15,6 @@ body {
 }
 
 header {
-  border-bottom: 1px solid black;
   background-color: white;
   padding: 0px 5vw;
   box-sizing: border-box;
@@ -28,13 +27,23 @@ header {
   top: 0;
 }
 
+header::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 95%;
+  border-bottom: 1px solid black;
+  transform: translateX(-50%);
+}
+
 header h2 {
   cursor: default;
 }
 
 nav {
   display: flex;
-  gap: 1vh;
+  gap: 5vh;
 }
 
 header button {
@@ -87,9 +96,36 @@ header button:hover {
 }
 
 .top-right {
-  border: 1px solid #000;
   width: 40%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  gap: 3vh;
+}
+
+.top-tittle {
+  margin: 0;
+}
+
+.top-text {
+  color: #595959;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.top-button {
+  color: white;
+  width: 11vw;
+  height: 7vh;
+  background-color: #da9858;
+  border: none;
+  border-radius: 100px;
+}
+
+.top-button:hover {
+  text-decoration: underline;
 }
 
 .top-left {
@@ -108,6 +144,7 @@ header button:hover {
   width: 100%;
   display: block;
   height: 100%;
+  border-radius: 10px;
 }
 
 .place {
@@ -115,4 +152,5 @@ header button:hover {
   width: 100%;
   height: 95vh;
   background-color: lightgray;
+  padding: 3vw;
 }
