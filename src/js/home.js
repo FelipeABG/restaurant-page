@@ -1,5 +1,7 @@
 import "../styles/home.css";
 
+import clearContent from "../js/clear";
+
 import drinkImg from "../img/cocktail.png";
 import foodImg from "../img/food.png";
 import desertImg from "../img/desert.png";
@@ -8,6 +10,7 @@ import placeSmall from "../img/place-small.png";
 
 export default class {
   static render() {
+    clearContent();
     const content = document.querySelector(".content");
 
     const main = this.#makeMain();

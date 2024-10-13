@@ -193,6 +193,11 @@ header button:hover {
 .place-text {
   font-size: 1.1rem;
   margin: 0;
+  color: #595959;
+}
+
+strong {
+  color: var(--black);
 }
 
 .place-button {
