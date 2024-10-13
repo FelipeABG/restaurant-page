@@ -65,7 +65,7 @@ header button:hover {
 .content {
   box-sizing: border-box;
   width: 100vw;
-  padding: 0 20vw;
+  padding: 0 15vw;
 }
 
 .main {
@@ -145,16 +145,21 @@ header button:hover {
 
 .desert-img,
 .food-img,
-.drink-img,
-.place-big-img {
+.drink-img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
 
 .place-small-img {
+  width: 50%;
   height: 70%;
   border-radius: 5px;
+}
+
+.place-big-img {
+  width: 50%;
+  height: 100%;
 }
 
 .place {
@@ -177,6 +182,7 @@ header button:hover {
 }
 
 .place-images {
+  box-sizing: border-box;
   height: 100%;
   width: 65%;
   display: flex;
