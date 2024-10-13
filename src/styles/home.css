@@ -68,7 +68,7 @@ header button:hover {
   padding: 0 20vw;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .content {
     padding: 0 13vw;
   }
