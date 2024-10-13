@@ -68,6 +68,12 @@ header button:hover {
   padding: 0 20vw;
 }
 
+@media screen and (min-width: 1400px) {
+  .content {
+    padding: 13vw;
+  }
+}
+
 .main {
   gap: 1.5vw;
   padding: 3vw;
@@ -151,17 +157,6 @@ header button:hover {
   border-radius: 5px;
 }
 
-.place-small-img {
-  width: 45%;
-  height: 70%;
-  border-radius: 5px;
-}
-
-.place-big-img {
-  width: 55%;
-  height: 100%;
-}
-
 .place {
   box-sizing: border-box;
   width: 100%;
@@ -189,6 +184,18 @@ header button:hover {
   flex-direction: row;
   gap: 1.5vw;
   align-items: flex-end;
+}
+
+.place-small-img {
+  border-radius: 5px;
+  width: 50%;
+  height: 70%;
+}
+
+.place-big-img {
+  height: 100%;
+  border-radius: 5px;
+  width: 50%;
 }
 
 .place-tittle {
