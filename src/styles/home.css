@@ -65,7 +65,7 @@ header button:hover {
 .content {
   box-sizing: border-box;
   width: 100vw;
-  padding: 0 15vw;
+  padding: 0 20vw;
 }
 
 .main {
@@ -152,13 +152,13 @@ header button:hover {
 }
 
 .place-small-img {
-  width: 50%;
+  width: 45%;
   height: 70%;
   border-radius: 5px;
 }
 
 .place-big-img {
-  width: 50%;
+  width: 55%;
   height: 100%;
 }
 
