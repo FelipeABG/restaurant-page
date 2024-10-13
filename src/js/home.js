@@ -3,6 +3,8 @@ import "../styles/home.css";
 import drinkImg from "../img/cocktail.png";
 import foodImg from "../img/food.png";
 import desertImg from "../img/desert.png";
+import placeBig from "../img/place-big.png";
+import placeSmall from "../img/place-small.png";
 
 export default class {
   static render() {
@@ -27,7 +29,7 @@ export default class {
     const topRight = this.#create("div", "top-right");
 
     const title = this.#create("h2", "top-tittle");
-    title.innerText = "Fancy Feast Restaurant";
+    title.innerText = "Some Restaurant Experience";
     const text = this.#create("p", "top-text");
     text.innerText = "Exquisite dishes and impeccable service";
     const button = this.#create("button", "top-button");
@@ -57,6 +59,26 @@ export default class {
 
   static #makePlace() {
     const place = this.#create("div", "place");
+
+    const textDiv = this.#create("div", "place-text-container");
+    const tittle = this.#create("h1", "place-tittle");
+    tittle.innerText = "Place";
+    const text = this.#create("p", "place-text");
+    text.innerHTML =
+      "<strong>Some Restaurant</strong>, located in the city center, offers its guests a wide selection of dishes and drinks. The interior is designed in a modern style, with elements of luxury. Here you can hold a bussiness meeting, a romantic evening or just enjoy a delicious meal.";
+    const button = this.#create("button", "place-button");
+    button.innerHTML = "LEARN MORE";
+
+    textDiv.appendChild(tittle);
+    textDiv.appendChild(text);
+    textDiv.appendChild(button);
+
+    const images = this.#create("div", "place-images");
+    images.appendChild(this.#createImage(placeBig, "place-big-img"));
+    images.appendChild(this.#createImage(placeSmall, "place-small-img"));
+
+    place.appendChild(textDiv);
+    place.appendChild(images);
 
     return place;
   }
