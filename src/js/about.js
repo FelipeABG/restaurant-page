@@ -1,7 +1,7 @@
-import clearContent from "./clear.js";
+import Util from "./utilities.js";
 
 export default class {
   static render() {
-    clearContent();
+    Util.clear();
   }
 }
