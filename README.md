@@ -24,16 +24,16 @@ The following directions were used to create the project.
 
 ### Author
 
-Made by Felipe Augusto
+- Made by Felipe Augusto
 
 ---
 
 ### Credits
 
-The design of the site was heavily inspired (almost fully copied) from this link: [Restaurant design](https://dribbble.com/shots/22554694-Restaurant-Website-Concept)
+- The design of the site was heavily inspired (almost fully copied) from this link: [Restaurant design](https://dribbble.com/shots/22554694-Restaurant-Website-Concept).
 
 ---
 
 ### Take a look
 
-#### [Live Server](https://felipeabg.github.io/admin-dashboard/)
+- #### [Live Server](https://felipeabg.github.io/admin-dashboard/)
