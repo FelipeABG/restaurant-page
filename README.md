@@ -36,4 +36,4 @@ The following directions were used to create the project.
 
 ### Take a look
 
-- #### [Live Server](https://felipeabg.github.io/admin-dashboard/)
+- #### [Live Server](https://felipeabg.github.io/restaurant-page/)
